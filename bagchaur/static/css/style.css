@@ -133,39 +133,39 @@
 .wrapper i:last-child{
   right: -22px;
 }
-.wrapper .carousel{
+.wrapper .carousel1{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.carousel.dragging{
+.carousel1.dragging{
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging img{
+.carousel1.dragging img{
   pointer-events: none;
 }
-.carousel img{
+.carousel1 img{
   height: 340px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 3);
 }
-.carousel img:first-child{
+.carousel1 img:first-child{
   margin-left: 0px;
 }
 
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel1 img{
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel1 img{
     width: 100%;
   }
 }

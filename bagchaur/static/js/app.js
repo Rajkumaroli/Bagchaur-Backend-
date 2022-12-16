@@ -1,4 +1,4 @@
-const carousel = document.querySelector(".carousel"),
+const carousel = document.querySelector(".carousel1"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
 
