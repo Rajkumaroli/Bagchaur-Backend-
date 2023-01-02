@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block janpratinidhi %}
+{% load static %}
+
+<div class="container py-5">
+    <h3 class="py-5">Elected Officials</h3>
+    <div class="row">
+        <div class="col-2">
+            <h5>फोटो</h5>
+        </div>
+        <div class="col-2">
+            <h5>नाम</h5>
+        </div>
+        <div class="col-2">
+            <h5>पद</h5>
+        </div>
+        <div class="col-2">
+            <h5>नगर/वडा</h5>
+        </div>
+        <div class="col-2">
+            <h5>फोन</h5>
+        </div>
+        <div class="col-2">
+            <h5>ईमेल</h5>
+        </div>
+    </div>
+    <hr/>
+
+   {% for info in infos %}
+   <div class="row py-4">
+    <div class="col-2">
+        <img src="/media/{{info.photo}}" width="50%" height="80vh" alt="images">
+    </div>
+    <div class="col-2">
+        <h6>{{info.name}}</h6>
+    </div>
+    <div class="col-2">
+        <h6>{{info.post}}</h6>
+    </div>
+    <div class="col-2">
+        <h6>{{info.worda}}</h6>
+    </div>
+    <div class="col-2">
+        {{info.phone}}
+    </div>
+    <div class="col-2">
+        {{info.email}}
+    </div>
+</div>
+
+{% endfor %}
+</div>
+
+{% endblock janpratinidhi %}

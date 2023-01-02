@@ -1,4 +1,17 @@
 from django.contrib import admin
-from mainapp.models import Contact
-# Register your models here.
+from mainapp.models import Contact, Janpratinidhi, Staff, Ward1, Ward2, Ward3, Ward4, Ward5, Ward6, Ward7, Ward8, Ward9, Ward10, Ward11, Ward12
 admin.site.register(Contact)
+admin.site.register(Janpratinidhi)
+admin.site.register(Staff)
+admin.site.register(Ward1)
+admin.site.register(Ward2)
+admin.site.register(Ward3)
+admin.site.register(Ward4)
+admin.site.register(Ward5)
+admin.site.register(Ward6)
+admin.site.register(Ward7)
+admin.site.register(Ward8)
+admin.site.register(Ward9)
+admin.site.register(Ward10)
+admin.site.register(Ward11)
+admin.site.register(Ward12)
