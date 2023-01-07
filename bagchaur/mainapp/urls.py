@@ -22,4 +22,5 @@ urlpatterns = [
     path('ward11/', ward11, name='ward11'),
     path('ward12/', ward12, name='ward12'),
     path('municipalD/', municipalD, name='municipalD'),
+    path('gazette/', gazette, name='gazette'),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

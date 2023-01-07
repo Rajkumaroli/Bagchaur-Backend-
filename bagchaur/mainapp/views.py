@@ -79,3 +79,6 @@ def ward12(request):
 
 def municipalD(request):
     return render(request, 'municipalD.html')
+
+def gazette(request):
+    return render(request, 'gazette.html')

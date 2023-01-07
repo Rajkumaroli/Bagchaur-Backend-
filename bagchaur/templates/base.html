@@ -15,7 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="{% static 'js/app.js' %}" defer></script>
-</head>
+    <style>
+      marquee{
+      font-size: 16px;
+      font-weight: 400;
+      color: rgb(26, 32, 32);
+      font-family: sans-serif;
+      }
+    </style>
+  </head>
 <body>
     <!-- Navbar Here......-->
 <!-- Top Menu -->
@@ -132,12 +140,18 @@
           <a class="nav-link" href="https://gunaso.opmcm.gov.np/home">हेलो सरकार</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> स्थानीय राजपत्र</a>
+          <a class="nav-link" href="{% url 'gazette' %}"> स्थानीय राजपत्र</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<marquee>
+  सार्वजनिक सूचना प्रकाशन गरिएको सम्बन्धमा ।
+  सामुदायिक विद्यालयहरुको लेखापरिक्षक छनौट गरिएको सम्बन्धमा ।
+  रोजगार सहायक पदको लागि प्रारम्भिक योग्यताक्रम निर्धारण तथा लिखित परीक्षा सञ्चालन सम्बन्धि सूचना ।
+  सार्वजनिक सूचना प्रकाशन गरिएको सम्बन्धमा । रोजगार सहायक पदको लागि प्रारम्भिक योग्यताक्रम निर्धारण तथा लिखित परीक्षा सञ्चालन सम्बन्धि सूचना ।
+</marquee>
   {% block body %}{% endblock body %}
   {% block introduction %}{% endblock introduction %}
   {% block janpratinidhi %}{% endblock janpratinidhi %}
@@ -155,7 +169,7 @@
   {% block ward11 %}{% endblock ward11 %}
   {% block ward12 %}{% endblock ward12 %}
   {% block municipalD %}{% endblock municipalD %}
-
+  {% block gazette %} {% endblock gazette%}
   {% block contact %}{% endblock contact %}
 
     
