@@ -1,9 +1,10 @@
 from django.shortcuts import render, HttpResponse, redirect
-from .models import Contact, Janpratinidhi, Staff, Ward1, Ward2, Ward3, Ward4, Ward5, Ward6, Ward7, Ward8, Ward9, Ward10, Ward11, Ward12
+from .models import Contact, Janpratinidhi, Staff, Ward1, Ward2, Ward3, Ward4, Ward5, Ward6, Ward7, Ward8, Ward9, Ward10, Ward11, Ward12,MunicipalD, Gazette, News, Publications, AnnualPR
 from django.contrib import messages
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    news = News.objects.all()
+    return render(request, 'index.html', {'news':news})
 
 def contact(request):
     if request.method=='POST':
@@ -78,7 +79,17 @@ def ward12(request):
     return render(request, 'ward12.html', {'wards12':wards12})
 
 def municipalD(request):
-    return render(request, 'municipalD.html')
+    municiples = MunicipalD.objects.all()
+    return render(request, 'municipalD.html', {'municiples':municiples})
 
 def gazette(request):
-    return render(request, 'gazette.html')
+    gazets = Gazette.objects.all()
+    return render(request, 'gazette.html', {'gazets':gazets})
+
+def publications(request):
+    publications = Publications.objects.all()
+    return render(request, 'publications.html', {'publications':publications})
+
+def annualPR(request):
+    annuals = AnnualPR.objects.all()
+    return render(request, 'annualPR.html', {'annuals':annuals})

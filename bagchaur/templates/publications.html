@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}publications{% endblock title %}
+{% block publications %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h4>प्रकाशनहरु</h4>
+        </div>
+    </div><hr>
+    {% for publication in publications %}
+    <div class="row py-3">
+        <div class="col-5">
+            <p>Submitted on: {{publication.date}}</p>
+        </div>
+        <div class="col-5">
+            <h6>{{publication.name}}</h6>
+        </div>
+        <div class="col-2">
+            <a href="{{publication.document}}"><button class="btn btn-primary">Document</button></a>
+        </div>
+    </div>
+    
+    {% endfor %}
+    
+</div>
+
+{% endblock publications %}

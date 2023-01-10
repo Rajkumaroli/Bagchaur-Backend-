@@ -8,72 +8,20 @@
             <h4>नगरपालिकाका निर्णयहरु</h4>
         </div>
     </div><hr>
+    {% for municiple in municiples %}
     <div class="row py-3">
-        <div class="col-4">
-            <p>Submitted on: Fri, 11/25/2022 - 12:22</p>
+        <div class="col-5">
+            <p>Submitted on: {{municiple.date}}</p>
         </div>
-        <div class="col-4">
-            <h6>दोश्रो का.पा. बैठकका निर्णयहरु</h6>
+        <div class="col-5">
+            <h6>{{municiple.name}}</h6>
         </div>
         <div class="col-2">
-            <a href="https://www.bagchaurmun.gov.np/sites/bagchaurmun.gov.np/files/%E0%A4%A6%E0%A5%8B%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%8B%20%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AA%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE%20%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AF.pdf"><button class="btn btn-primary">Download</button></a>
+            <a href="{{municiple.document}}"><button class="btn btn-primary">Download</button></a>
         </div>
     </div>
-    <div class="row py-3">
-        <div class="col-4">
-            <p>Submitted on: Fri, 11/25/2022 - 12:22</p>
-        </div>
-        <div class="col-4">
-            <h6>प्रथम का.पा. बैठकका निर्णयहरु</h6>
-        </div>
-        <div class="col-2">
-            <a href="https://www.bagchaurmun.gov.np/sites/bagchaurmun.gov.np/files/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A5%88%E0%A4%A0%E0%A4%95%20%E0%A4%A8%E0%A4%82.%20%E0%A5%A7%20%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A4%BF%20%E0%A5%A8%E0%A5%A6%E0%A5%AD%E0%A5%AF%E0%A5%A4%E0%A5%A6%E0%A5%AB%E0%A5%A4%E0%A5%A7%E0%A5%A6.pdf"><button class="btn btn-primary">Download</button></a>
-        </div>
-    </div>
-    <div class="row py-3">
-        <div class="col-4">
-            <p>Submitted on: Fri, 11/25/2022 - 12:22</p>
-        </div>
-        <div class="col-4">
-            <h6>दोश्रो का.पा. बैठकका निर्णयहरु</h6>
-        </div>
-        <div class="col-2">
-            <a href="#"><button class="btn btn-primary">Download</button></a>
-        </div>
-    </div>
-    <div class="row py-3">
-        <div class="col-4">
-            <p>Submitted on: Fri, 11/25/2022 - 12:22</p>
-        </div>
-        <div class="col-4">
-            <h6>मिति २०७७।०४।०६</h6>
-        </div>
-        <div class="col-2">
-            <a href="https://www.bagchaurmun.gov.np/sites/bagchaurmun.gov.np/files/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE%20%E0%A4%AC%E0%A5%88%E0%A4%A0%E0%A4%95%20%E0%A4%A8%E0%A4%82.%20%E0%A5%A7%20%20%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A4%BF%20%E0%A5%A8%E0%A5%A6%E0%A5%AD%E0%A5%AD%E0%A5%A4%E0%A5%A6%E0%A5%AA%E0%A5%A4%E0%A5%A6%E0%A5%AC.pdf"><button class="btn btn-primary">Download</button></a>
-        </div>
-    </div>
-    <div class="row py-3">
-        <div class="col-4">
-            <p>Submitted on: Fri, 11/25/2022 - 12:22</p>
-        </div>
-        <div class="col-4">
-            <h6>मिति २०७७। ०२।१९ गते सोमबार ।</h6>
-        </div>
-        <div class="col-2">
-            <a href="https://www.bagchaurmun.gov.np/sites/bagchaurmun.gov.np/files/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE%20%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AF%E0%A4%B9%E0%A4%B0%E0%A5%81%20%E0%A5%A8%E0%A5%A6%E0%A5%AD%E0%A5%AD%E0%A5%A4%E0%A5%A6%E0%A5%A8%E0%A5%A4%20%E0%A5%A7%E0%A5%AF_0.pdf"><button class="btn btn-primary">Download</button></a>
-        </div>
-    </div>
-    <div class="row py-3">
-        <div class="col-4">
-            <p>Submitted on: Fri, 11/25/2022 - 12:22</p>
-        </div>
-        <div class="col-4">
-            <h6>मिति २०७७। ०२।०७ गते बुधबार ।</h6>
-        </div>
-        <div class="col-2">
-            <a href="https://www.bagchaurmun.gov.np/sites/bagchaurmun.gov.np/files/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE%20%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AF%E0%A4%B9%E0%A4%B0%E0%A5%81%20%E0%A5%A8%E0%A5%A6%E0%A5%AD%E0%A5%AD%E0%A5%A4%E0%A5%A6%E0%A5%A8%E0%A5%A4%E0%A5%A6%E0%A5%AD.pdf"><button class="btn btn-primary">Download</button></a>
-        </div>
-    </div>
+    
+    {% endfor %}
     
 </div>
 

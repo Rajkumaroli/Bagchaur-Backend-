@@ -138,3 +138,45 @@ class Ward12(models.Model):
 
     def __str__(self):
         return self.name
+
+class MunicipalD(models.Model):
+    date = models.DateField(auto_now=False, auto_now_add=False)
+    name = models.TextField()
+    document = models.TextField()
+
+    def __str__(self):
+        return self.name
+    
+
+class Gazette(models.Model):
+    name = models.CharField(max_length=200)
+    document = models.CharField(max_length=1000)
+    date = models.DateField(auto_now=False, auto_now_add=False)
+
+    def __str__(self):
+        return self.name
+    
+class News(models.Model):
+    news = models.TextField()
+
+    def __str__(self):
+        return self.news
+    
+class Publications(models.Model):
+    name = models.CharField(max_length=600)
+    document = models.CharField(max_length=700)
+    date = models.DateField(auto_now=False, auto_now_add=False)
+
+    def __str__(self):
+        return self.name
+
+class AnnualPR(models.Model):
+    name = models.CharField(max_length=600)
+    document = models.CharField(max_length=700)
+    date = models.DateField(auto_now=False, auto_now_add=False)
+
+    def __str__(self):
+        return self.name
+
+    
+

@@ -18,21 +18,38 @@
 {% endif %}
 <div class="container py-5">
   <h1 class="text-center">Contact US</h1>
-  <form action="/contact/" method="POST">
-    {% csrf_token %}
-    <div class="mb-3">
-      <label for="name" class="form-label">Full Name</label>
-      <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Full Name">
+  <div class="row">
+    <div class="col-7">
+      <form action="/contact/" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Full Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Your Comment</label>
+          <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" value="SEND MESSAGE" />
+      </form>
     </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email">
+
+    <div class="col-5">
+      <h4>सम्पर्क</h4>
+      <p>बागचौर नगरपालिकाको कार्यालय ,
+        बागचौर, कर्णाली प्रदेश, नेपाल ।</p>
+        <p>फोन : ०८८४१२०३५</p>
+        <p>ईमेल1: ito.bagchaurmun@gmail.com,</p>
+        <p>ईमेल2: info@bagchaurmun.gov.np</p>
+        <p>वे‍बसाईट: bagchaurmun.gov.np</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449015.5897431968!2d82.286188!3d28.451397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9a048f3e70ce1f7!2sBagchaur%20Municipality!5e0!3m2!1sen!2snp!4v1673364834872!5m2!1sen!2snp" width="480" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
-    <div class="mb-3">
-      <label for="comment" class="form-label">Your Comment</label>
-      <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
-    </div>
-    <input type="submit" class="btn btn-primary" value="SEND MESSAGE" />
-  </form>
+
+  </div>
 </div>
 {% endblock contact %}

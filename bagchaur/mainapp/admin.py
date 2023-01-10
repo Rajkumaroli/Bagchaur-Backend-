@@ -1,5 +1,5 @@
 from django.contrib import admin
-from mainapp.models import Contact, Janpratinidhi, Staff, Ward1, Ward2, Ward3, Ward4, Ward5, Ward6, Ward7, Ward8, Ward9, Ward10, Ward11, Ward12
+from mainapp.models import Contact, Janpratinidhi, Staff, Ward1, Ward2, Ward3, Ward4, Ward5, Ward6, Ward7, Ward8, Ward9, Ward10, Ward11, Ward12,MunicipalD, Gazette, News, Publications, AnnualPR
 admin.site.register(Contact)
 admin.site.register(Janpratinidhi)
 admin.site.register(Staff)
@@ -15,3 +15,8 @@ admin.site.register(Ward9)
 admin.site.register(Ward10)
 admin.site.register(Ward11)
 admin.site.register(Ward12)
+admin.site.register(Gazette)
+admin.site.register(News)
+admin.site.register(MunicipalD)
+admin.site.register(Publications)
+admin.site.register(AnnualPR)
