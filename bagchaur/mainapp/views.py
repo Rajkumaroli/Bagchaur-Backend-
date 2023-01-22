@@ -93,3 +93,9 @@ def publications(request):
 def annualPR(request):
     annuals = AnnualPR.objects.all()
     return render(request, 'annualPR.html', {'annuals':annuals})
+
+def search(request):
+    query = request.GET['query']
+    municiples = MunicipalD.objects.filter(title__icontains = query)
+    municiples = {'municiples': municiples}
+    return render(request, 'search.html', municiples)

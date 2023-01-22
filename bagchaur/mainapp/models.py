@@ -141,7 +141,7 @@ class Ward12(models.Model):
 
 class MunicipalD(models.Model):
     date = models.DateField(auto_now=False, auto_now_add=False)
-    name = models.TextField()
+    title = models.TextField()
     document = models.TextField()
 
     def __str__(self):

@@ -25,4 +25,5 @@ urlpatterns = [
     path('gazette/', gazette, name='gazette'),
     path('publications/', publications, name='publications'),
     path('annual-progress-report/', annualPR, name='annual-progress-report'),
+    path('search/', search, name='search')
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
